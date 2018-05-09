@@ -1,15 +1,11 @@
 import React from 'react';
-import { Row, InputGroup, InputGroupAddon, Col, Input, Label } from 'reactstrap';
+import PageHeader from '../../components/pageHeader';
+import TodoForm from './todoForm';
+
 
 export default props => (
     <div>
-        <Row>
-            <Col xs="12" sm="9">
-                <InputGroup>
-                    <InputGroupAddon addonType="prepend">@</InputGroupAddon>
-                    <Input placeholder="username" />
-                </InputGroup>
-            </Col>
-        </Row>
+        <PageHeader name="Tarefas" small="Cadastro"></PageHeader>
+        <TodoForm />
     </div>
 )
